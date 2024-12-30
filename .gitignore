@@ -1,9 +1,10 @@
 # Ignore all files
 *
 
-# Include only .fsx and .txt files
+# Include only .fsx, .py and .txt files
 !*.fsx
 !*.txt
+!*.py
 
 # Ensure directories are not ignored so the .fsx and .txt files within them can be tracked
 !*/
