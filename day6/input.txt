@@ -1,0 +1,21 @@
+........
+.#......
+......#.
+........
+........
+#.......
+.....#..
+........
+
+obstacle positions order (e.g. starting from top left):
+* x is some random int larger or equal to 1
+- First obstacle: (i, j)
+- Second obstacle: (i+1, j+x)
+- Third obstacle: (i+x, j-1)
+- Fourth obstacle: (i-1, j-x)
+- First obstacle: (i-x, j+1)
+
+So the *one* extra row or column has to be added in this order, since the guard always turns right. 
+The loop is always gonna be clockwise because the guard always turns right.
+So maybe use this clockwise direction to check for the obstacles and check where a new obstacle could be placed to ensure the obstacle positions order (maybe if 3 out of 4 obstacles already staisfy this?)
+
